@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/acebrian__jump.wav-14374c56cb3f86426b5b44b0f748e1f8.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/acebrian__jump.wav"
+dest_files=[ "res://.import/acebrian__jump.wav-14374c56cb3f86426b5b44b0f748e1f8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
