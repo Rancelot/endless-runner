@@ -1,6 +1,6 @@
 # endless-runner
 
-## COMP 4555 Games Development Final Project FALL 2020
+### COMP 4555 Games Development Final Project FALL 2020
 
 This is my endless runner platformer game.
 
@@ -15,7 +15,8 @@ Audience & Genre
 
 Synopsis
 - Theme
-    - The King of Britain has given the Knight an important task of investigating the Forest of Light. Early scouts have found it to be soiled by rubbish and infected with evil monsters. The Knight must traverse the forest to get rid of all the rubbish defiling the forest.
-- Goals: 
+    - The King of the Khagon Empire has given the Knight an important task of investigating the Sunlit Forest. Early scouts have found it to be soiled by rubbish and infected with evil monsters. The Knight must traverse the forest to get rid of all the rubbish defiling the forest.
+- Goals
+    - avoid obstacles in running path of the Knight
 - Mechanics:
 - Uniqueness: 

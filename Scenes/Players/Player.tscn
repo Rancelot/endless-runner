@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__JUMP_000.png" type="Texture" id=2]
@@ -27,16 +27,19 @@ animations = [ {
 "frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 21 ), ExtResource( 10 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 20 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "Run",
-"speed": 9.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Jump",
-"speed": 9.0
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 25.0598, 35.2225 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 25.0522, 6.20463 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -50,3 +53,11 @@ animation = "Run"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.749161, -10.3277 )
 shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0.840904, 20.3917 )
+shape = SubResource( 3 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
