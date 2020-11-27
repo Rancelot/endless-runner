@@ -5,6 +5,8 @@ var velocity = Vector2.ZERO
 export var jump_velocity = 650.0	#export variables get displayed in inspector when in Player scene
 export var gravity_scale = 25.0
 
+var score = 0
+
 #Finite State Machines
 enum {
 	JUMP,
@@ -15,6 +17,9 @@ enum {
 var state = RUN
 
 onready var animation  = $AnimatedSprite #onready - means wait until scene is ready, Gets animated sprite of Player
+
+func _ready():
+	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
 
 #FINITE STATE MACHINES -- simplify way code works, transitioning between states
 func _physics_process(delta):
@@ -47,3 +52,7 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	if body is StaticBody2D:	#Block Jump
 		state = JUMP
+
+func rewardplayer(scoretoadd):
+	score += scoretoadd
+	print(score)

@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="endless-runner"
 run/main_scene="res://Scenes/Game.tscn"
 
+[autoload]
+
+Signals="*res://Scripts/Signals.gd"
+
 [input]
 
 Jump={
