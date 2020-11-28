@@ -1,0 +1,4 @@
+extends Node2D
+
+func _ready():
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), 0)	#modifies master volume of entire scene and game

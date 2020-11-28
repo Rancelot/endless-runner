@@ -17,8 +17,11 @@ enum {
 var state = RUN
 
 onready var animation  = $AnimatedSprite #onready - means wait until scene is ready, Gets animated sprite of Player
+onready var jump_sound = $JumpSound
+onready var death_sound = $DeathSound
 
-func _ready():
+
+func _ready():	
 	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
 	Signals.connect("killplayer", self, "killplayer")
 
@@ -31,6 +34,7 @@ func _physics_process(delta):
 			velocity = Vector2.ZERO
 			velocity.y -= jump_velocity
 			animation.play("Jump")
+			jump_sound.play()
 			state = IDLE	#set state to IDLE right away due to Jumping only for an instant, wait for player to get to the ground
 		IDLE:
 			pass
@@ -59,4 +63,6 @@ func rewardplayer(scoretoadd):
 	Signals.emit_signal("updatescore", score)
 
 func killplayer():
+	death_sound.play()
+	yield(death_sound, "finished")
 	queue_free()

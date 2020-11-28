@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__JUMP_000.png" type="Texture" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_009.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_008.png" type="Texture" id=20]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_002.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Audio/grunt1-death-pain.wav" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Audio/acebrian__jump.wav" type="AudioStream" id=23]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -59,5 +61,11 @@ shape = SubResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0.840904, 20.3917 )
 shape = SubResource( 3 )
+
+[node name="JumpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
