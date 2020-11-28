@@ -5,19 +5,20 @@
 [ext_resource path="res://Scenes/Effectors/EffectDamage.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32.035, 41.1924 )
+extents = Vector2( 33.3257, 37.9092 )
 
 [node name="Barrel" type="Node2D"]
 script = ExtResource( 1 )
-scroll_speed = 3.5
+scroll_speed = 4.0
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.240272, 0.240272 )
+scale = Vector2( 0.24978, 0.218252 )
 texture = ExtResource( 2 )
 
 [node name="EffectDamage" parent="." instance=ExtResource( 3 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EffectDamage"]
+position = Vector2( 0, 0.149149 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
