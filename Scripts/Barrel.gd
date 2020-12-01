@@ -6,7 +6,8 @@ func _physics_process(delta):
 
 func _on_EffectDamage_body_entered(body):
 	if body.name == "Player": #player node, if hits player, launch code
-		Signals.emit_signal("killplayer")
+		Signals.emit_signal("damageplayer")
+		#Signals.emit_signal("killplayer")
 		queue_free()
 
 

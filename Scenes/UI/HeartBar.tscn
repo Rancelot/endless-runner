@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/GUI Buttons/HP_Bonus_01_RESIZED.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/HeartBar.gd" type="Script" id=2]
 
 [node name="HeartBar" type="HBoxContainer"]
 anchor_right = 0.5
@@ -8,6 +9,7 @@ margin_right = -371.0
 margin_bottom = 31.0
 rect_scale = Vector2( 1.21613, 1.12841 )
 custom_constants/separation = 3
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -20,7 +20,6 @@ onready var animation  = $AnimatedSprite #onready - means wait until scene is re
 onready var jump_sound = $JumpSound
 onready var death_sound = $DeathSound
 
-
 func _ready():	
 	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
 	Signals.connect("killplayer", self, "killplayer")
@@ -66,3 +65,4 @@ func killplayer():
 	death_sound.play()
 	yield(death_sound, "finished")
 	queue_free()
+
