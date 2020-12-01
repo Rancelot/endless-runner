@@ -17,6 +17,8 @@ Synopsis
 - Theme
     - The King of the Khagon Empire has given the Knight an important task of investigating the Sunlit Forest. Early scouts have found it to be soiled by rubbish and infected with evil monsters. The Knight must traverse the forest to get rid of all the rubbish defiling the forest.
 - Goals
-    - avoid obstacles in running path of the Knight
+    - Avoid obstacles in running path of the Knight
+    - Acquire the most coins
 - Mechanics:
+    - Jumping mechanic with Spacebar
 - Uniqueness: 
