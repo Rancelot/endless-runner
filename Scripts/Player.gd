@@ -5,8 +5,6 @@ var velocity = Vector2.ZERO
 export var jump_velocity = 680.0	#export variables get displayed in inspector when in Player scene
 export var gravity_scale = 20.0
 
-var score = 0
-
 #Finite State Machines
 enum {
 	JUMP,
@@ -23,6 +21,15 @@ onready var death_sound = $DeathSound
 func _ready():	
 	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
 	Signals.connect("killplayer", self, "killplayer")
+
+func _process(delta):
+	#progressing levels by number of coins, means faster animation 
+	if Constants.score > 2:
+		#animation.speed_scale = 2
+		animation.set_speed_scale(1.5)
+	elif Constants.score > 4:
+		animation.set_speed_scale(4)
+
 
 #FINITE STATE MACHINES -- simplify way code works, transitioning between states
 func _physics_process(delta):
@@ -58,10 +65,11 @@ func _on_Area2D_body_exited(body):
 		state = JUMP
 
 func rewardplayer(scoretoadd):
-	score += scoretoadd
-	Signals.emit_signal("updatescore", score)
+	Constants.score += scoretoadd
+	Signals.emit_signal("updatescore", Constants.score)
 
 func killplayer():
+	get_parent().get_node("BackgroundMusic").stop()		#stop playing bgm 
 	death_sound.play()
 	yield(death_sound, "finished")
 	queue_free()

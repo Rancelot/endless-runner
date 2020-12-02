@@ -21,7 +21,7 @@
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_009.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_008.png" type="Texture" id=20]
 [ext_resource path="res://Assets/Sprites/Player/Knight_02__RUN_002.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Audio/grunt1-death-pain.wav" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Audio/GP_End_Turn_1.wav" type="AudioStream" id=22]
 [ext_resource path="res://Assets/Audio/acebrian__jump.wav" type="AudioStream" id=23]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -51,6 +51,7 @@ position = Vector2( -5.47122, -1.0237 )
 scale = Vector2( 0.14847, 0.135751 )
 frames = SubResource( 1 )
 animation = "Run"
+frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.749161, -10.3277 )
@@ -67,5 +68,6 @@ stream = ExtResource( 23 )
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 22 )
+volume_db = -10.097
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
