@@ -19,13 +19,13 @@ func _ready():#on restart or when game starts, this function is called.
 func _process(delta):
 	
 	#Level scrolling progression here to be continued
-	if Constants.score >= 2:
+	if Constants.score >= 4:
 		foreground.set_shader_param("scroll_speed", 0.25)
 		bgtrees_fore.set_shader_param("scroll_speed", 0.20)
 		bgmiddle_decor.set_shader_param("scroll_speed", 0.16)
 		bg_decor.set_shader_param("scroll_speed", 0.15)
 	
-	if Constants.score >= 5:
+	if Constants.score >= 10:
 		foreground.set_shader_param("scroll_speed", 0.40)
 		bgtrees_fore.set_shader_param("scroll_speed", 0.35)
 		bgmiddle_decor.set_shader_param("scroll_speed", 0.31)

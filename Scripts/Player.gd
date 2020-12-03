@@ -17,6 +17,7 @@ var state = RUN
 onready var animation  = $AnimatedSprite #onready - means wait until scene is ready, Gets animated sprite of Player
 onready var jump_sound = $JumpSound
 onready var death_sound = $DeathSound
+onready var spawner = get_parent().get_node("Spawner")
 
 func _ready():	
 	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
@@ -24,10 +25,10 @@ func _ready():
 
 func _process(delta):
 	#progressing levels by number of coins, means faster animation 
-	if Constants.score > 2:
+	if Constants.score > 4:
 		#animation.speed_scale = 2
 		animation.set_speed_scale(1.5)
-	elif Constants.score > 4:
+	elif Constants.score > 10:
 		animation.set_speed_scale(4)
 
 
@@ -69,7 +70,8 @@ func rewardplayer(scoretoadd):
 	Signals.emit_signal("updatescore", Constants.score)
 
 func killplayer():
-	get_parent().get_node("BackgroundMusic").stop()		#stop playing bgm 
+	get_parent().get_node("BackgroundMusic").stop()		#stop playing bgm
+	spawner.queue_free() 	#makes enemy spawning stops when player dies 
 	death_sound.play()
 	yield(death_sound, "finished")
 	queue_free()
