@@ -15,10 +15,14 @@ Audience & Genre
 
 Synopsis
 - Theme
-    - The King of the Khagon Empire has given the Knight an important task of investigating the Sunlit Forest. Early scouts have found it to be soiled by rubbish and infected with evil monsters. The Knight must traverse the forest to get rid of all the rubbish defiling the forest.
+    - The King of the Khagon Empire has given the Knight an important task of investigating the Sunlit Forest. Early scouts have found it to be soiled by rubbish and infected with evil monsters. The Knight must consistently traverse the forest to purify the land.
 - Goals
     - Avoid obstacles in running path of the Knight
     - Acquire the most coins
+    - Last for the longest time
 - Mechanics:
     - Jumping mechanic with Spacebar
+        - Make sure to time the spacebar correctly in order to avoid the enemies and obstacles
 - Uniqueness: 
+    - It's visuals for a 2D sidescroller are very high quality and cartoon like make it a visually appealing game.
+    - The sounds match the theme and environment the player is in. The background music adds an extra sense of suspense as the player goes through the forest.
