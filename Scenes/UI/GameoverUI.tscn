@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/GameoverUI.gd" type="Script" id=1]
-[ext_resource path="res://Assets/GUI Buttons/woodenrestart5.png" type="Texture" id=2]
-[ext_resource path="res://Assets/GUI Buttons/woodenrestartSHINY5.png" type="Texture" id=3]
+[ext_resource path="res://Assets/GUI Buttons/5_simple_cropped_resized.png" type="Texture" id=2]
+[ext_resource path="res://Assets/GUI Buttons/5_shiny_cropped_resized.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Assets/Fonts/m6x11.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 100
+size = 50
 font_data = SubResource( 1 )
 
 [node name="GameoverUI" type="Control"]
@@ -22,10 +22,10 @@ __meta__ = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 276.773
-margin_top = 47.1361
-margin_right = 756.773
-margin_bottom = 527.136
+margin_left = 412.0
+margin_top = 250.0
+margin_right = 612.0
+margin_bottom = 340.0
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 __meta__ = {
@@ -33,10 +33,15 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="TextureButton"]
-margin_left = 87.1378
-margin_top = 183.091
-margin_right = 557.138
-margin_bottom = 337.091
+margin_left = 23.0
+margin_top = 16.0
+margin_right = 177.0
+margin_bottom = 61.0
 custom_fonts/font = SubResource( 2 )
 text = "RESTART"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
