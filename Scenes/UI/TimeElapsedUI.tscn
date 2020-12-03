@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/TimeElapsedUI.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Assets/Fonts/m6x11.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = SubResource( 1 )
+
+[node name="TimeElapsedUI" type="Control"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 778.0
+margin_top = 12.0
+margin_right = 1068.0
+margin_bottom = 141.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "0:00"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

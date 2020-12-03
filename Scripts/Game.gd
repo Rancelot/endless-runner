@@ -15,6 +15,8 @@ func _ready():#on restart or when game starts, this function is called.
 	Signals.connect("damageplayer", self, "damageplayer")
 	self.current_health = 3
 	Constants.score = 0		#set score of the player back to 0 so all scrolling and animations follow through with initial speeds
+	Constants.time = 0
+	Constants.timer_playing = true		#time and timer_playing reset for Timer UI to be reset
 
 func _process(delta):
 	
