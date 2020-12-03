@@ -4,7 +4,7 @@ export (Array, PackedScene) var scenes
 
 var random_scene = RandomNumberGenerator.new()
 var selected_scene_index = 0
-var spawn_waittime = 3.5
+var spawn_waittime = 2.5
 onready var spawner = $Timer
 
 func _on_Timer_timeout():
@@ -14,9 +14,11 @@ func _on_Timer_timeout():
 	add_child_below_node(self, tmp)		#add as child node to current scene which is a spawner
 	
 	if Constants.score >= 10:
-		spawn_waittime -= 0.2
+		spawn_waittime = 1.3
+#		spawn_waittime -= 0.2
 	elif Constants.score >= 4:
-		spawn_waittime -= 0.1
+		spawn_waittime = 1.7
+#		spawn_waittime -= 0.1
 	
 	print(spawn_waittime)
 	if spawn_waittime < 1.0:
