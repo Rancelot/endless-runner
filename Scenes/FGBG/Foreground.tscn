@@ -34,6 +34,7 @@ margin_right = 1920.0
 margin_bottom = 1080.0
 rect_scale = Vector2( 0.543, 0.556824 )
 texture = ExtResource( 2 )
+scrollbg_speed = 0.2
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

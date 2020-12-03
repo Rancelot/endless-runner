@@ -29,3 +29,4 @@ shader_param/scroll_speed = 0.11
 material = SubResource( 2 )
 rect_scale = Vector2( 0.541347, 0.566563 )
 texture = ExtResource( 2 )
+scrollbg_speed = 0.11
