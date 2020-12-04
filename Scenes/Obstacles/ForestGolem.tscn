@@ -28,7 +28,7 @@ extents = Vector2( 25.8274, 41.4628 )
 
 [node name="ForestGolem" type="Node2D"]
 script = ExtResource( 14 )
-scroll_speed = 4.0
+scroll_speed = 4.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.15, 0.15 )

@@ -15,4 +15,4 @@ func _on_EffectDamage_body_entered(body):
 
 
 func _on_VisibilityNotifier2D_screen_exited():
-	queue_free()	#optimization if on mobile, to free up memory, delete golem as soon as its off screen
+	queue_free()	#optimization if on mobile, to free up memory, delete wraith as soon as its off screen

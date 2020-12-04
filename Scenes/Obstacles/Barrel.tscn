@@ -9,7 +9,7 @@ extents = Vector2( 33.3257, 37.9092 )
 
 [node name="Barrel" type="Node2D"]
 script = ExtResource( 1 )
-scroll_speed = 4.0
+scroll_speed = 4.2
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.24978, 0.218252 )
