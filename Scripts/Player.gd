@@ -23,21 +23,18 @@ func _ready():
 	Signals.connect("rewardplayer", self, "rewardplayer")	#register signals, apply rewardplayer signal on Player.gd script and use rewardplayer method to call when we get signal from pickup
 	Signals.connect("killplayer", self, "killplayer")
 
-func _process(delta):
-	#progressing levels by number of coins, means faster animation 
-	if Constants.score > 4:
-		#animation.speed_scale = 2
-		animation.set_speed_scale(1.5)
-	elif Constants.score > 10:
-		animation.set_speed_scale(4)
-
-
 #FINITE STATE MACHINES -- simplify way code works, transitioning between states
 func _physics_process(delta):
 	match state:
 		RUN:
+			#progressing levels by number of coins, means faster animation
+			if Constants.score > 4:
+				animation.set_speed_scale(1.5)
+			elif Constants.score > 10:
+				animation.set_speed_scale(4)
 			animation.play("Run")	#play run animation
 		JUMP:
+			animation.set_speed_scale(1)
 			velocity = Vector2.ZERO
 			velocity.y -= jump_velocity
 			animation.play("Jump")
