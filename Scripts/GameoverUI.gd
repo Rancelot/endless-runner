@@ -9,3 +9,7 @@ func _on_TextureButton_pressed():
 func gameover():
 	Signals.emit_signal("stopTimer")
 	self.show()
+
+
+func _on_TextureButton2_pressed():
+	get_tree().quit()
