@@ -15,12 +15,9 @@ func _on_Timer_timeout():
 	
 	if Constants.score >= 10:
 		spawn_waittime = 1.3
-#		spawn_waittime -= 0.2
 	elif Constants.score >= 4:
 		spawn_waittime = 1.7
-#		spawn_waittime -= 0.1
 	
-	print(spawn_waittime)
 	if spawn_waittime < 1.0:
 		spawn_waittime = 1.0
 	spawner.set_wait_time(spawn_waittime)
