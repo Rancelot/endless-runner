@@ -32,7 +32,6 @@ The King of the Khagon Empire has assigned his swiftest Knight on a quest to the
 - Jumping mechanic with **_Spacebar_**
 - When the player **_collects a certain number of gold coins_** (4 coins / 10 coins), the speed the player is **_running will be faster_** and **_enemies will spawn more frequently_**.
 - The **_wraiths, golems, and barrels_** have varying speeds of running into the Knight
-- The
 
 ## Game Keys
 - **_P_** key: Pauses the game
