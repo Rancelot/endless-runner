@@ -38,10 +38,10 @@ The King of the Khagon Empire has assigned his swiftest Knight on a quest to the
 
 ## Uniqueness 
 - Knight Runner has very high quality visuals for a 2D platformer and its cartoon-like sprites make it a visually appealing game.
-- It only has a single game mechanic to control the player that can make it a quick and fast game for anyone seeking such a thing.
-- The sounds match the theme and environment the player is in. The background music adds an extra sense of suspense as the player goes through the forest.
-- The scrolling parallax background at increasing speeds depending on the amount of coins the player has creates a sense of pressure towards the player.
-- The random spawning system of either enemies, obstacles, or coins gives the player a sense of wariness to always pay attention so they do not lose or make frequent mistakes in their timing that could cost them lives.
+- It only has a single game mechanic to control the player that can make it a quick and fast game for short bursts of fun in people's busy lives.
+- The sounds match the theme and environment the player is in. Since the main character is a knight, the background music has a medieval feel and the sound effects give appropriate feedback to the player of their status in the game of whether they are winning or losing. So the sounds add an extra sense of fun and suspense to the player’s experience.
+- The scrolling parallax background with increasing speeds creates the illusion of the knight moving faster which can provide the player with the adrenaline to keep being interested in playing the game so they are not bored.
+- The random spawning system for all the items, obstacles, and enemies keeps the player engaged ensuring that they continuously pay attention to what is coming towards the Knight so they do not lose lives, make mistakes, or die.
 
 ## Credits
 This game would not have been created without the great help of these people below:
