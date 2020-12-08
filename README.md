@@ -21,7 +21,7 @@ Genre: 2D Platformer
 Audience: Casual Gamers
 
 ## Synopsis
-The King of the Khagon Empire has assigned his swiftest Knight on a quest to the Sunlit Forest. There has been some rumors going around that ancient forest golems and some azure wraiths have infested the area. The forest must be hiding some riches in store for people who delve deeper to explore it. The Knight must swiftly explore and run across the forest in order to collect any gold lurking in its depths.
+The King of the Khagon Empire has assigned his swiftest Knight on a quest to the Sunlit Forest. There have been some rumors going around that ancient forest golems and some azure wraiths have infested the area. The forest must be hiding some riches in store for people who delve deeper to explore it. The Knight must swiftly explore and run across the forest in order to collect any gold lurking in its depths.
 
 ## Goals
 - Avoid any **obstacles and enemies** in the running path of the Knight
