@@ -4,6 +4,8 @@
 
 A 2D endless runner platforming game built in the Godot Engine.
 
+![Knight Runner](Assets/Knight_Runner_gif2.gif)
+
 ## How-to
 1. Go to the "Launchable_Files" Folder
 2. Select the right folder of the game which can run on your system (Windows/Mac)
@@ -41,7 +43,7 @@ The King of the Khagon Empire has assigned his swiftest Knight on a quest to the
 - It only has a single game mechanic to control the player that can make it a quick and fast game for short bursts of fun in people's busy lives.
 - The sounds match the theme and environment the player is in. Since the main character is a knight, the background music has a medieval feel and the sound effects give appropriate feedback to the player of their status in the game of whether they are winning or losing. So the sounds add an extra sense of fun and suspense to the player’s experience.
 - The scrolling parallax background with increasing speeds creates the illusion of the knight moving faster which can provide the player with the adrenaline to keep being interested in playing the game so they are not bored.
-- The random spawning system for all the items, obstacles, and enemies keeps the player engaged ensuring that they continuously pay attention to what is coming towards the Knight so they do not lose lives, make mistakes, or die.
+- The random spawning system for all the items, obstacles, and enemies keeps the player engaged ensuring that they continuously pay attention to what is coming towards the Knight so they do not lose lives, make mistakes, or die. 
 
 ## Credits
 This game would not have been created without the great help of these people below:
