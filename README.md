@@ -6,7 +6,7 @@ A 2D endless runner platforming game built in the Godot Engine.
 
 ![Knight Runner](Assets/Knight_Runner_gif2.gif)
 
-![Youtube Video Link](https://youtu.be/SY4KCzFJAzk)
+[Youtube Video Link](https://youtu.be/SY4KCzFJAzk)
 
 ## How-to
 1. Go to the "Launchable_Files" Folder
